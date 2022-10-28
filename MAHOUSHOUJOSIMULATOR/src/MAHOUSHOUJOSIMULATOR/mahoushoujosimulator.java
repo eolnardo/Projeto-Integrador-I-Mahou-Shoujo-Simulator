@@ -1,6 +1,5 @@
 package MAHOUSHOUJOSIMULATOR;
 
-import java.util.Scanner;
 
 public class mahoushoujosimulator {
 		
