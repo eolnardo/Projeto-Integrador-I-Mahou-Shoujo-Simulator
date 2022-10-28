@@ -32,7 +32,7 @@ public class mahoushoujosimulator {
 		
 		//VILOEEEEEEEEEEEEEEES
 		
-		
+		vilao.nome = "haku";
 		
 		
 	}
