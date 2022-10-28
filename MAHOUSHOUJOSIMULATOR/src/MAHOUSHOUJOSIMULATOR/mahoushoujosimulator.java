@@ -3,15 +3,16 @@ package MAHOUSHOUJOSIMULATOR;
 import java.util.Scanner;
 
 public class mahoushoujosimulator {
-		
 	public static void main(String[] args) {
 		jogador jogador = new jogador();
 		falasjogador falas = new falasjogador();
 		machine pc = new machine();
-		viloes vilao1 = new viloes();
+		viloes vilao1 = new viloes(); viloes vilao2 = new viloes(); viloes vilao3 = new viloes();
 		Scanner scan = new Scanner(System.in);
 		
-		vilao1.nome = "Haku, Senhor do Fogo"; 
+		vilao1.nome = "Haku, o Senhor do Fogo"; 
+		vilao2.nome = "Kiara, a Rainha dos Mares";
+		vilao3.nome = "Kenku, o Mestre do Gelo";
 
 		jogador.login();
 		
@@ -32,7 +33,7 @@ public class mahoushoujosimulator {
 		
 		System.out.println("\n====================================================S2=========================================================\n");
 		
-		pc.menu(vilao1, jogador);
+		pc.menu(vilao1, vilao2, vilao3, jogador);
 		
 		System.out.println("\n====================================================S2=========================================================\n");
 		
@@ -44,4 +45,4 @@ public class mahoushoujosimulator {
 	}
 
 }
-
+	

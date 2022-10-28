@@ -6,7 +6,7 @@ public class jogador {
 	Scanner scan = new Scanner(System.in);
 	String nome, desejo;
 	int uniforme = 0, menujogador;
-	double ataque = 10, defesa = 10, vidabase = 20, vida;
+	double ataque = 10, defesa = 10, vidabase = 100, vida;
 	int viloesDerrotados = 0;
 	
 	

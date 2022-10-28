@@ -10,16 +10,14 @@ public class machine {
 	boolean sair = false, menuc = false, jogadormorto = false, bossHaku = false;
 	mahoushoujosimulator zero = new mahoushoujosimulator();
 	
-	
-	
-	void menu (viloes vilao, jogador jogador) {
+	void menu (viloes vilao1, viloes vilao2, viloes vilao3, jogador jogador) {
 		while(sair==false) {
 			System.out.println("\n====================================================S2=========================================================\n");
 			System.out.print("\n[Kuriboh]:\nO que você quer fazer agora?\n1. LUTAR!!!!!!!\n2. Sair (fracote!)\nComando: ");
 			menu = scan.nextInt();
 			switch(menu) {
 			case 1:
-				menucombate(vilao, jogador);
+				menucombate(vilao1, vilao2, vilao3, jogador);
 				break;
 			case 2:
 				sair = true;
@@ -31,9 +29,8 @@ public class machine {
 			}
 		}
 		
-		
+		scan.close();
 	}
-
 	
 	void combate (viloes vilao, jogador jogador) {
 		jogador.vida = jogador.vidabase;
@@ -84,18 +81,18 @@ public class machine {
 		mascote = scan.next();
 	}
 	
-	void menucombate (viloes vilao, jogador jogador) {
+	void menucombate (viloes vilao1, viloes vilao2, viloes vilao3, jogador jogador) {
 		if (jogador.viloesDerrotados == 1) {
 				while (menuc == false) {
 					System.out.println("\n====================================================S2=========================================================\n");
-					System.out.print("\n[Kuriboh]:\n1. HAKU!! (eliminado)\n2. KIARA!!\n3. O esquisitão... digo, o Kenku.\n4. MENU!\nComando aqui: ");
+					System.out.print("\n[Kuriboh]:\n1. " + vilao1.nome + " (eliminado)\n2. " + vilao2.nome + "\n3. " + vilao3.nome + "\n4. MENU!\nComando aqui: ");
 					menucombate = scan.nextInt();
 					switch(menucombate) {
 						case 1:
 						System.out.println("\n[Kuriboh]:\nmorreu já, filhão");
 							break;
 						case 2:
-							combate(vilao, jogador);
+							combate(vilao1, jogador);
 							break;
 						case 3:
 							break;
@@ -115,7 +112,7 @@ public class machine {
 				menucombate = scan.nextInt();
 				switch(menucombate) {
 					case 1:
-						combate(vilao, jogador);
+						combate(vilao1, jogador);
 						break;
 					case 2:
 						break;
