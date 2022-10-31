@@ -2,7 +2,7 @@ package MAHOUSHOUJOSIMULATOR;
 
 import java.util.Scanner;
 
-public class falasjogador {
+public class dialogos {
 	Scanner scan = new Scanner(System.in);
 	
 	
@@ -56,6 +56,15 @@ public class falasjogador {
 				System.out.println("\n[" + jogador.nome + "]:\n(Prefiro não falar nada)");
 				break;
 		}
+	}
+
+	void dream1 (jogador jogador){
+		int falas;
+
+		
+		System.out.println("\n[FALAR]\n1. \n2. \n(Responder Kuriboh): ");
+		falas = scan.nextInt();
+
 	}
 
 }

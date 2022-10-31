@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class mahoushoujosimulator {
 	public static void main(String[] args) {
 		jogador jogador = new jogador();
-		falasjogador falas = new falasjogador();
+		dialogos falas = new dialogos();
 		machine pc = new machine();
 		viloes vilao1 = new viloes(); viloes vilao2 = new viloes(); viloes vilao3 = new viloes();
 		Scanner scan = new Scanner(System.in);
